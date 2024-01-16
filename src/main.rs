@@ -1,7 +1,14 @@
 use dialoguer::{theme::ColorfulTheme, Select};
 fn main() {
+greetings();
+    // while true {
+    // println!("hello");
+}
 
-    let choices = vec!["Option 1", "Option 2", "Option 3"];
+
+fn greetings() {
+    // initiating a game
+    let choices = vec!["Continue a previous game", "New game!", "From a snapshot"];
 
     let selection = Select::with_theme(&ColorfulTheme::default())
         .with_prompt("Choose an option:")
@@ -9,12 +16,9 @@ fn main() {
         .default(0) // Default selection (optional)
         .interact()
         .unwrap();
-
+ret
     println!("You chose: {}", choices[selection]);
+// end of initiating a game
 
 
-        while true {
-    println!("Welcome to the chess-mos! ");
-    println!("hello");
-}
 }
